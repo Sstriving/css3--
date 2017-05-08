@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            background-color: black;
+            padding-left: 500px;
+            padding-top: 200px;
+        }
+        .div_bg{
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            animation: changinfo 5s infinite linear;
+        }
+        @keyframes changinfo {
+            from{
+                transform: rotatex(0deg) rotatey(0deg)
+            }
+            to{
+                transform: rotatex(360deg) rotatey(360deg)
+            }
+        }
+        .div_1,.div_2,.div_3,.div_4,.div_5,.div_6{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: rgba(255, 255, 255, 0.36);
+            border: 1px solid black;
+
+        }
+        .div_1{
+            /*background-color: brown;*/
+        }
+        .div_2{
+            /*background-color: deeppink;*/
+            transform: rotatey(90deg) translatex(100px) translatez(-100px);
+        }
+        .div_3{
+            /*background-color: blue;*/
+            transform: rotatey(90deg) translatex(100px) translatez(100px);
+        }
+        .div_4{
+            /*background-color: green;*/
+            transform: rotatey(90deg) rotatex(90deg) translatex(100px) translatez(100px);
+        }
+        .div_5{
+            /*background-color: red;*/
+            transform: rotatez(90deg) rotatey(90deg) translatex(100px) translatez(100px) ;
+        }
+        .div_6{
+            /*background-color: silver;*/
+            transform: translatez(-200px);
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            /*padding-top: 20px;*/
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="div_bg">
+    <div class="div_1">
+        <img src="img/71.png" alt="picture1"/>
+    </div>
+    <div class="div_2">
+        <img src="img/72%20-%20副本.png" alt="picture2"/>
+    </div>
+    <div class="div_3">
+        <img src="img/73%20-%20副本.png" alt="picture3"/>
+    </div>
+    <div class="div_4">
+        <img src="img/74%20-%20副本.png" alt="picture4"/>
+    </div>
+    <div class="div_5">
+        <img src="img/77.png" alt="picture5"/>
+    </div>
+    <div class="div_6">
+        <img src="img/78%20-%20副本.png" alt="picture6"/>
+    </div>
+</div>
+</body>
+</html>
